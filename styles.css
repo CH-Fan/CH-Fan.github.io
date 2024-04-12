@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* 轻微的背景色 */
+    color: #333;
+}
+
+header, section, footer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff; /* 白色背景使内容更清晰 */
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0066cc; /* 标题使用淡蓝色 */
+}
+
+h2 {
+    color: #0055a5; /* 子标题使用更深的蓝色 */
+}
+
+a {
+    color: #0077cc; /* 链接使用鲜艳的蓝色 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+a:hover {
+    color: #0055a5; /* 悬停时颜色加深 */
+    text-decoration: underline; /* 悬停时添加下划线 */
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #666; /* 底部使用灰色 */
+}
+
+/* 动画效果保持不变 */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header, section, footer {
+    animation: fadeIn 1s ease-out;
+}
